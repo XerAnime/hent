@@ -20,7 +20,7 @@ const tlt = document.querySelector('title');
 
 $(document).ready(function () {
     $.ajax({
-            url: `https://senpai-api.vercel.app/getVideo/player?id=${id}`,
+            url: `https://hanime.tv/api/hanime/getVideo/player?id=${id}`,
             type: "GET",
             dataType: "json",
             success: async function (data) {
@@ -29,7 +29,7 @@ $(document).ready(function () {
             }
         })
     $.ajax({
-        url: `https://senpai-api.vercel.app/getInfo?id=${id}`,
+        url: `https://hanime.tv/api/hanime/getInfo?id=${id}`,
         type: "GET",
         dataType: "json",
         success: async function (data) {
