@@ -20,7 +20,7 @@ const tlt = document.querySelector('title');
 
 $(document).ready(function () {
     $.ajax({
-            url: `https://modd-hanime-api.onrender.com/getVideo/player?id=${id}`,
+            url: `https://senpai-api.vercel.app/getVideo/player?id=${id}`,
             type: "GET",
             dataType: "json",
             success: async function (data) {
